@@ -1,0 +1,21 @@
+[package]
+name = "tig-worker"
+version = "0.1.0"
+readme = "README.md"
+license = "https://github.com/tig-foundation/tig-monorepo/tree/main/docs/agreements/end_user_license_agreement.pdf"
+authors.workspace = true
+repository.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+anyhow = "1.0.81"
+clap = { version = "4.5.4" }
+tig-challenges = { path = "../tig-challenges" }
+tig-structs = { path = "../tig-structs" }
+tig-utils = { path = "../tig-utils" }
+wasmi = { git = "https://github.com/tig-foundation/wasmi.git", branch = "runtime_signature" }
+
+[features]
