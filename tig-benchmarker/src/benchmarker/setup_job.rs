@@ -198,7 +198,8 @@ fn pick_difficulty(rng: &mut StdRng, block: &Block, challenge: &Challenge) -> Re
     diffs2.sort();
 
     //Change the 0 to whatever you want, it is the difficulty number (with larger n having less variables)
-    let scaler: i32 = 0 + rand::Rng::gen_range(rng, 0..4);
+    let sc: i32 = (((diffs1.len()) as f32)*0.2).floor() as i32;
+    let scaler: i32 = sc + rand::Rng::gen_range(rng, 0..3);
     let param1: i32 = diffs1.clone()[scaler as usize];
     let param2: i32 = diffs2.clone()[(diffs2.len() - (scaler+1) as usize) as usize];
 
