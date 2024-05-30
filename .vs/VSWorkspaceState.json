@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\tig-algorithms",
+    "\\tig-algorithms\\src",
+    "\\tig-algorithms\\src\\satisfiability",
+    "\\tig-algorithms\\src\\satisfiability\\schnoing",
+    "\\tig-benchmarker",
+    "\\tig-benchmarker\\src",
+    "\\tig-benchmarker\\src\\benchmarker"
   ],
-  "SelectedNode": "\\Cargo.toml",
+  "SelectedNode": "\\tig-worker",
   "PreviewInSolutionExplorer": false
 }
